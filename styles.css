@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+header {
+  background: #ab9476;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: grid;
+  display: list-item;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.navigation img {
+  height: 8em;
+  border-radius: 1em;
+  justify-content: center;
+}
+.home:hover {
+  color: #abacaf;
+}
+.why:hover {
+  color: #abacaf;
+}
+.get:hover {
+  color: #abacaf;
+}
+.me:hover {
+  color: #abacaf;
+}
+.home {
+  cursor: pointer;
+}
+.me {
+  cursor: pointer;
+}
