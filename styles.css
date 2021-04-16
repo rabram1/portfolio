@@ -12,12 +12,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .navigation {
   display: grid;
   display: list-item;
-  color: black;
+  color: white;
   cursor: pointer;
   text-decoration: none;
   padding: 1em;
@@ -29,20 +30,78 @@ header {
   justify-content: center;
 }
 .home:hover {
-  color: #abacaf;
+  color: black;
+  text-decoration: underline overline;
 }
 .why:hover {
-  color: #abacaf;
+  color: black;
+  text-decoration: underline overline;
 }
 .get:hover {
-  color: #abacaf;
+  color: black;
+  text-decoration: underline overline;
 }
 .me:hover {
-  color: #abacaf;
+  color: black;
+  text-decoration: underline overline;
 }
 .home {
   cursor: pointer;
 }
 .me {
   cursor: pointer;
+}
+
+/* Ab hier beginnt Main */
+
+main {
+  background: #3f362a;
+  color: white;
+}
+
+h2 {
+  padding: 1.5em;
+}
+
+.ich {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.description {
+  padding-left: 2em;
+  padding-top: 4em;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.ich img {
+  margin-top: 2em;
+  margin-left: 5em;
+  height: 20em;
+  border-radius: 3em;
+  padding-bottom: 1em;
+}
+
+.warum {
+  background: #ab9476;
+  font-family: "Lucida Console", "Courier New", monospace;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  padding: 1em;
+}
+.antwort {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.antwort p {
+  font: bold;
+  font-size: 8em;
+}
+
+.kontakt {
+  background: #3f362a;
+}
+
+footer {
+  background-color: black;
 }
