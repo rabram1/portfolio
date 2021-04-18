@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 header {
-  background: #ab9476;
+  background: #d6d979;
 }
 
 .navigation ul {
@@ -12,7 +12,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .navigation {
@@ -29,10 +30,7 @@ header {
   border-radius: 1em;
   justify-content: center;
 }
-.home:hover {
-  color: black;
-  text-decoration: underline overline;
-}
+
 .why:hover {
   color: black;
   text-decoration: underline overline;
@@ -45,63 +43,99 @@ header {
   color: black;
   text-decoration: underline overline;
 }
-.home {
+.nav-button {
+  outline: none;
+  background-color: #d9d7d7;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 7px 20px;
   cursor: pointer;
 }
-.me {
-  cursor: pointer;
+
+.nav-button:hover {
+  text-decoration: none;
+  color: #d6d979;
+  background-color: white;
 }
 
 /* Ab hier beginnt Main */
 
 main {
-  background: #3f362a;
+  background: #525936;
   color: white;
 }
 
-h2 {
-  padding: 1.5em;
+#ich {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.description {
+  padding-left: 9em;
+  padding-block-start: 10em;
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.ich {
+#ich img {
+  margin-top: 2em;
+  margin-left: 5em;
+  height: 20em;
+
+  padding-bottom: 1em;
+}
+
+#warum {
+  background: #d6d979;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 2em;
+  margin: 4em;
+}
+
+.antwort {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  text-align: justify;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.description {
-  padding-left: 2em;
-  padding-top: 4em;
-  text-align: center;
-  font-family: "Lucida Console", "Courier New", monospace;
+
+.wwd {
+  font-style: bold;
+  font-size: 2em;
+  text-align: justify;
 }
 
-.ich img {
-  margin-top: 2em;
-  margin-left: 5em;
-  height: 20em;
-  border-radius: 3em;
-  padding-bottom: 1em;
-}
-
-.warum {
-  background: #ab9476;
-  font-family: "Lucida Console", "Courier New", monospace;
-  grid-template-columns: 1fr 1fr;
-  display: grid;
-  padding: 1em;
-}
-.antwort {
-  font-family: "Lucida Console", "Courier New", monospace;
+.antwort ul {
+  list-style-type: none;
+  padding-left: 5em;
 }
 .antwort p {
   font: bold;
   font-size: 8em;
 }
 
-.kontakt {
-  background: #3f362a;
+#kontakt {
+  padding: 1em;
 }
 
 footer {
-  background-color: black;
+  background-color: #525936;
+  margin-top: -5em;
+}
+
+.kontakticons img {
+  height: 25px;
+  width: 25px;
+}
+.kontakticons {
+  display: flex;
+  justify-content: space-between;
+  width: 25em;
 }

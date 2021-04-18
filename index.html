@@ -5,49 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+    </style>
+
     <title>Portfolio R</title>
   </head>
   <body>
     <header>
       <div class="navigation">
         <ul>
-          <li class="home">Home</li>
-          <li class="me">Myself</li>
-          <li class="why">Why</li>
-          <li class="get">Get in contact</li>
+          <button class="nav-button">Home</button>
+          <a href="#ich"> <button class="nav-button">Myself</button></a>
+          <a href="#warum"> <button class="nav-button">Why</button></a>
+          <a href="#kontakt">
+            <button class="nav-button">Get in contact</button></a
+          >
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="ich">
+      <section id="ich">
         <img src="Pictures/Mee.png" alt="" />
-        <section class="description">
+        <article class="description">
           <h2>Roman Abram</h2>
           <h3>Wirtschaftsinformatik</h3>
           <h3>agiles Projektmanagement</h3>
           <h4>following: web developer</h4>
-        </section>
+        </article>
       </section>
-      <section class="warum">
-        <h2>Warum Web developer?</h2>
+      <section id="warum">
         <section class="antwort">
+          <h4 class="wwd">Warum Web developer?</h4>
           <ul>
-            <li>remote working</li>
-            <li>freiheit</li>
+            <li>Remote Arbeitsumgebung</li>
+            <li>Freiheit</li>
+            <li>kreative logik</li>
+            <li>Remote Arbeitsumgebung</li>
+            <li>Freiheit</li>
+            <li>kreative logik</li>
+            <li>Remote Arbeitsumgebung</li>
+            <li>Freiheit</li>
+            <li>kreative logik</li>
+            <li>Remote Arbeitsumgebung</li>
+            <li>Freiheit</li>
             <li>kreative logik</li>
           </ul>
         </section>
       </section>
-      <section class="kontakt">
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-      </section>
     </main>
   </body>
   <footer>
-    <p>hehehe</p>
+    <section id="kontakt" class="kontakt">
+      <div class="kontakticons">
+        <a href="https://github.com/rabram1" target="_blank">
+          <img src="./Pictures/GitHubIcon.jpeg" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/roman-abram-905baa20a/"
+          target="_blank"
+        >
+          <img src="./Pictures/LinkedInIcon.jpeg" />
+        </a>
+        <a href="https://www.xing.com/profile/Roman_Abram/cv" target="_blank">
+          <img src="./Pictures/XingIcon.jpeg" />
+        </a>
+      </div>
+    </section>
   </footer>
 </html>
